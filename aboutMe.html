@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>About Me</title>
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="cranium.png" alt="Site Logo" class="h-12 w-12 rounded-full mr-3">
+        <h1 class="text-2xl font-bold">My Personal Website</h1>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="block md:hidden p-2 text-black">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row md:space-x-4 absolute md:static top-16 left-0 md:top-auto md:left-auto w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none z-10">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center md:text-left md:items-start p-4 md:p-0">
+          <li><a href="index.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">Home</a></li>
+          <li><a href="aboutMe.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">About Me</a></li>
+          <li><a href="portofolio.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">My Gallery</a></li>
+          <li><a href="calculator.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">Calculator</a></li>
+          <li><a href="Form.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br>
+  
+  <div class="text-center">
+    <h1 class="text-3xl font-bold">About Eunice</h1>
+    </div>
+    
+    <div class="flex flex-col items-center m-4">
+      <img src="gres.jpg" alt="An image" class="w-full max-w-md mx-auto rounded">
+      <br>
+      <div class="contact-info flex flex-col items-center space-y-8">
+      <div class="contact-item w-100 p-6 bg-white rounded-lg shadow-md">
+     
+        <strong>Full Name:</strong> Grace Eunice Aritonang<br>
+        <strong>Interests:</strong> Art, Music, History, & Criminal Cases<br>
+        <strong>Languages:</strong> Indonesian (Native) & English (Fluent)<br>
+      
+    </div>
+
+          <center>
+        <p>I specialize in forensic investigations, focusing on analyzing evidence and assisting in solving complex criminal cases. <br>
+          With a passion for science and justice, I aim to bring clarity to challenging situations.
+          </p>
+        </center>
+        </div>  
+        
+        <br>
+
+        
+
+        </div>
+        
+        
+      </div>
+        <h1 class="text-2xl font-bold text-center mb-6">Contact Me</h1>
+        <div class="flex items-center justify-center space-x-8">
+          <!-- Contact items -->
+           <center>
+            <div class="contact-info flex flex-col md:flex-row items-center md:space-x-8 space-y-8 md:space-y-0">
+              <div class="contact-item w-72 text-center p-6 bg-white rounded-lg shadow-md">
+                <img src="insta.png" alt="Instagram Icon" class="w-10 h-10 mx-auto mb-4">
+                <a href="https://instagram.com/graceunicea" class="text-gray-800 text-lg font-medium hover:underline text-center md:text-left">
+                  graceunicea
+                </a>
+              </div>
+            
+              <div class="contact-item w-72 text-center p-6 bg-white rounded-lg shadow-md">
+                <img src="linkedin.jpg" alt="LinkedIn Icon" class="w-10 h-10 mx-auto mb-4">
+                <a href="http://linkedin.com/in/graceunicea" class="text-gray-800 text-lg font-medium hover:underline text-center md:text-left">
+                  graceunicea
+                </a>
+              </div>
+          
+            <div class="contact-item w-72 text-center md:text-left p-6 bg-white rounded-lg shadow-md">
+              <img src="gmail.png" alt="Gmail Icon" class="w-10 h-10 mx-auto mb-4">
+              <a href="mailto:grace.eunice58@gmail.com" class="text-gray-800 text-lg font-medium hover:underline">
+                grace.eunice58@gmail.com
+              </a>
+            </center>
+            </div>
+          </div>
+       
+          
+        
+       
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+        <p>&copy; 2024 Grace Eunice Aritonang. All rights reserved.</p>
+      </footer>
+    
+      <!-- JavaScript for Hamburger Menu -->
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+    
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('hidden'); // Toggle the hidden class
+        });
+      </script>
+   
+</body>
+</html>

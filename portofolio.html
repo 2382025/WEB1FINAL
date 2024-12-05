@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Gallery</title>
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="cranium.png" alt="Site Logo" class="h-12 w-12 rounded-full mr-3">
+        <h1 class="text-2xl font-bold">My Personal Website</h1>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="block md:hidden p-2 text-black">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+      <!-- Navigation Menu -->
+      <nav id="nav-menu" class="hidden md:flex flex-col md:flex-row md:space-x-4 absolute md:static top-16 left-0 md:top-auto md:left-auto w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none z-10">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-center md:text-left md:items-start p-4 md:p-0">
+          <li><a href="index.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">Home</a></li>
+          <li><a href="aboutMe.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">About Me</a></li>
+          <li><a href="portofolio.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">My Gallery</a></li>
+          <li><a href="calculator.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">Calculator</a></li>
+          <li><a href="Form.html" class="block px-6 py-2 bg-gray-200 rounded-full text-black hover:bg-gray-300 transition">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<br> 
+
+  <div class="text-center">
+    <h1 class="text-3xl font-bold">Welcome To My Gallery</h1>
+    </div>
+
+ <div class="gallery flex flex-wrap justify-center gap-4 max-w-screen-xl mx-auto p-5">
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic1.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Working at a crime scene.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic2.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Collecting evidence from the crime scene.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic3.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Analyzing fibers and materials under controlled conditions in the forensic laboratory.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic4.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Reconstructing a crime scene to uncover the sequence of events leading to the incident.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic5.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">A closer look at DNA extraction, a vital step in identifying suspects or victims.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic6.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Utilizing advanced tools to examine trace evidence at a microscopic level.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic7.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Preparing a forensic report to present findings in a court of law.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic8.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Exploring digital forensics techniques to retrieve hidden or deleted files as evidence.</p>
+    </div>
+  
+    <div class="gallery-item flex-grow max-w-xs text-center">
+      <img src="forensic9.jpg" alt="Evidence" class="w-full h-72 object-cover rounded-lg">
+      <p class="mt-3 text-gray-600 text-sm leading-relaxed">Conducting a detailed analysis of fingerprints to match with potential suspects.</p>
+    </div>
+
+</div>
+
+<footer class="bg-gray-800 text-white text-center py-4 mt-8">
+    <p>&copy; 2024 Grace Eunice Aritonang. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden'); // Toggle the hidden class
+    });
+  </script>
+
+</body>
+</html>
